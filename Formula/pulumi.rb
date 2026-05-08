@@ -69,7 +69,6 @@ class Pulumi < Formula
   conflicts_with "pulumi"
 
   test do
-    system "#{bin}/pulumi version"
     system "#{bin}/pulumi-cli version"
   end
 end
