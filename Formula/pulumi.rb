@@ -10,7 +10,7 @@ class Pulumi < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pulumi-cli/pulumi/releases/download/v3.218.1/pulumi-v3.218.1-darwin-x64.tar.gz"
+      url "https://github.com/pulumi-cli/homebrew-tap/releases/download/v3.218.1/pulumi-v3.218.1-darwin-x64.tar.gz"
       sha256 "4f57229d666e64e026cf464ac3f73ad255c9f4761d4e04b34d0c0c1aa6efd3d4"
 
       def install
@@ -23,7 +23,7 @@ class Pulumi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pulumi-cli/pulumi/releases/download/v3.218.1/pulumi-v3.218.1-darwin-arm64.tar.gz"
+      url "https://github.com/pulumi-cli/homebrew-tap/releases/download/v3.218.1/pulumi-v3.218.1-darwin-arm64.tar.gz"
       sha256 "65df5a6ab473e598bf58736e6b92e2b2572fa0c679fcc00e33802581073eed10"
 
       def install
@@ -39,7 +39,7 @@ class Pulumi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pulumi-cli/pulumi/releases/download/v3.218.1/pulumi-v3.218.1-linux-arm64.tar.gz"
+      url "https://github.com/pulumi-cli/homebrew-tap/releases/download/v3.218.1/pulumi-v3.218.1-linux-arm64.tar.gz"
       sha256 "73981c05b0a1493bdf680a341d636866c4d0d0d573d7530deb1219e45334aa5e"
 
       def install
@@ -52,7 +52,7 @@ class Pulumi < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pulumi-cli/pulumi/releases/download/v3.218.1/pulumi-v3.218.1-linux-x64.tar.gz"
+      url "https://github.com/pulumi-cli/homebrew-tap/releases/download/v3.218.1/pulumi-v3.218.1-linux-x64.tar.gz"
       sha256 "16fb7502966f476aa3196f5a2d662f4f561fc2c3ff47206a002ebda05278b977"
 
       def install
