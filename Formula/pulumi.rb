@@ -70,5 +70,6 @@ class Pulumi < Formula
 
   test do
     system "#{bin}/pulumi version"
+    system "#{bin}/pulumi-cli version"
   end
 end
